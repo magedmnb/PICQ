@@ -1,0 +1,201 @@
+
+        <style>
+		.onclick-menu {
+    position: relative;
+    display: inline-block;
+}
+.onclick-menu:before {
+    content: "click me!";
+}
+.onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+}
+.onclick-menu:focus .onclick-menu-content {
+    /*  opacity is 1 in opened state (see below) */
+    opacity: 1;
+    visibility: visible;
+
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+}
+.onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+
+    /* use opacity to fake immediate toggle */
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
+		
+		#tags{
+  float:left;
+  border:1px solid #ccc;
+  padding:5px;
+  font-family:Arial;
+}
+#tags span.tag{
+  cursor:pointer;
+  display:block;
+  float:left;
+  color:#fff;
+  background:#689;
+  padding:5px;
+  padding-right:25px;
+  margin:4px;
+}
+#tags span.tag:hover{
+  opacity:0.7;
+}
+#tags span.tag:after{
+ position:absolute;
+ content:"x";
+ border:1px solid;
+ padding:0 4px;
+ margin:3px 0 10px 5px;
+ font-size:10px;
+}
+#tags input{
+  background:#eee;
+  border:0;
+  margin:4px;
+  padding:7px;
+  width:auto;
+}
+                 
+                .ui-page{
+               
+                background-image:url(images/back.png);
+                background-size:100% 100%;  
+                }
+                #content{
+                    width:100%;   
+                }
+                #photo{
+                    float:left;
+                    width:100%;
+                    margin-top:15px;
+                    height:200px;
+                    
+                }
+                #userPhoto{
+                      width: 60%;
+  margin-left: -1%;
+  height: 200px;
+  margin-top: -2%;
+                }
+                #camera{
+                    margin-top: -83px;
+                    width: 25%;
+                    height: 40px;
+                    float: right;
+                    margin-right: -4%;
+
+                }
+                #uimg{
+                   float: left;
+  width: 100%;
+  height: 191px;
+                }
+                #details{
+                        float: right;
+  width: 37%;
+  margin-right: 2%;
+  margin-top: -66%;
+                }
+                #category{
+                      margin-right:3%;
+                }
+                .
+                #upload1{
+                    width:10%;
+                    margin-top: 97px;
+                    margin-left: 50%;
+                }
+                #dd{
+                    margin-top: 17px;
+                    margin-right: 3%;
+                    width: 103%;
+                    font-size: 14px;  
+                    font-family: sans-serif;
+                    color:black;
+                    
+                }
+                .dropdown li
+                {
+                    background-color: #f8cf8c;
+                    color:black;
+
+                }
+                #menu a{
+                    color: #FFF;
+                }
+                #description{
+                       width: 60%;
+                        height: 51px;
+                        margin-left: 2%;
+                          margin-top: 200px;
+                        
+                }
+               #textareea {
+
+}
+
+
+        </style>
+       
+
+   
+                   <div class="upload_info">
+                    <div class="pic_camera">
+                    <img src="images/dwn.jpg" id="camera_image"  style=" width: 54%;border:2px solid #ebebec;" alt="upload picture"/>
+                    <a id="open-dialog"><img class="upload_camera"  src="images/camera.png"/></a>
+                    <div class="upload_desc" style="  margin-top: 2%;  height: 189px;">
+                      
+                            <input type="text" name="name" id="name" placeholder="Name">
+                          <div tabindex="0" class="onclick-menu">
+    <ul class="onclick-menu-content">
+        <li><button onclick="alert('click 1')">Look, mom</button></li>
+        <li><button onclick="alert('click 2')">no JavaScript!</button></li>
+        <li><button onclick="alert('click 3')">Pretty nice, right?</button></li>
+    </ul>
+</div>
+                            
+					  <div id="dd" class="wrapper-dropdown-3">
+                                        <span>Category</span>
+                                        <ul class="dropdown">
+                                            <li><a href="#">All</a></li>
+                                            <li><a href="#">Art</a></li>
+                                            <li><a href="#">Classic</a></li>
+                                            <li><a href="#">Modern</a></li>
+                                        </ul>
+                                    </div>
+                                      
+                    </div>
+					</div>
+                    
+                </div>
+                
+                <div class="description">
+						  <div id="tags">
+  
+    <input type="text" value="" placeholder="Add a tag" />
+  </div>
+                   	 <textarea  id="desc" rows="2" cols="10" onblur="onBlur(this)" onfocus="onFocus(this)"> Add description</textarea>
+                </div>
+				<input type="button" onclick="takePicture();" value="takePicture" /><br/>
+				<input type="button" onclick="selectPicture();" value="Select Picture from Library" /><br/>
+		
+                <div class="upload_button">
+                    
+                   <a onclick="uploadPicture();"><img width="25%;" src="images/upload button.png"/></a>
+                </div>
+	<!-- server url --> 
+		<input id="serverUrl" type="hidden" value="http://www.idesignarch.net/important/CodeIgniter-3.0.0/Upload/upload_image" />
+		        <!-- server url --> 
+            
+            
+	 <link rel="stylesheet" type="text/css" href="css/css2/style.css" />
+        <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+        <noscript><link rel="stylesheet" type="text/css" href="css/css2/noJS.css" /></noscript> 

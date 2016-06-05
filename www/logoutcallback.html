@@ -1,0 +1,15 @@
+
+<script>
+ function logout() {
+        openFB.logout(
+                function() {
+                    alert('Logout successful');
+                },
+                errorHandler);
+    }
+
+   $('#main_header').hide();
+	$('#home').load('login.html');
+	$.getScript('js/pages/login.js');
+</script>
+

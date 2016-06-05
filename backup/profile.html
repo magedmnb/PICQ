@@ -1,0 +1,156 @@
+ <style>
+             
+            .wrapper-demo {
+  margin: 60px 0 0 0;
+  font-weight: 400;
+  position: absolute;
+  top: 9%;
+  float: right;
+  right: 3%;
+}
+              .profile_posted_photos{
+			  position: relative;
+			  }
+			  .profile_user_info {
+  width: 60%;
+  position: absolute;
+    left: 34%;
+  top: 254%;
+  }
+  div#profile_quote {
+  width: 60%;
+}
+hr {
+  border: solid #7E7676;
+  border-width: 1.5px 0 0;
+  clear: both;
+  top: -15%;
+  margin: 21px 0 21px;
+  height: 0;
+}
+                #userInfo{
+                    width:100%;
+                   
+                }
+                #Photo{
+                    float:left;
+                    width:40%;
+                    margin-left: 3%;
+                    margin-top: 2%;
+                    height: 90%;
+                }
+                #details{
+                    float:right;
+                    width:52%;
+                    margin-top: 2%;
+                    height: 90%;
+                }
+                #more{
+                    float:right;
+                    width:30%;
+                }
+                #info{
+                    float: left;
+                    width: 60%;
+                      margin-left: -27%;
+                    font-weight: 900;
+                }
+              
+
+           
+                #dd{
+                      margin-top: -76%;
+  width: 111%;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: black;
+  margin-left: -26%;
+                    
+                }
+
+                .dropdown li
+                {
+                    background-color: #fff;
+                    color:black;
+
+                }
+                #menu a{
+                    color: #FFF;
+                }
+        </style>       
+
+              
+                <div class="profile_posted_photos">
+                     <img id="user_profile_facebook" class="profile_posted_photos1" src=""/>
+                    <div class="profile_user_info">
+                        <span id="profile_name"></span>
+                        <br/>
+                        <div id="profile_quote">
+                        <span></span>
+                        </div>
+					
+                    </div>
+					  <div class="wrapper-demo drop_down_options">
+                                    <div id="dd" class="wrapper-dropdown-3">
+                                        <img src="images/button_drop.png" width="60%" height="20px"/>
+                                            <ul class="dropdown menu">
+                                                <li><a href="#followers">Followers</a></li>
+                                                <li><a href="#following">Following</a></li>
+                                                <li><a href="likes.html">Likes</a></li>
+                                                <li><a href="editProfile.html">Edit Profile</a></li>
+                                            </ul>
+                                    </div>
+                ​                </div>
+                  
+                </div>
+                <div class="hr">
+                <hr width="100%"/>
+</div>
+                    <div id="cont">
+			
+		</div>
+	 
+				
+				           
+	 <link rel="stylesheet" type="text/css" href="css/images/style.css" />
+        <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+        <noscript><link rel="stylesheet" type="text/css" href="css/css2/noJS.css" /></noscript> 
+		 <script type="text/javascript">
+            
+            function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children('span');
+                this.opts = this.dd.find('ul.dropdown > li');
+                this.val = '';
+                this.index = -1;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+					$( "body" ).on( "click", '#dd', function() {
+					  $(this).toggleClass('active');
+                        return false;
+					
+			});
+                  
+                },
+                getValue : function() {
+                    return this.val;
+                },
+                getIndex : function() {
+                    return this.index;
+                }
+            }
+
+            $(function() {
+                var dd = new DropDown( $('#dd') );
+
+                $(document).click(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-3').removeClass('active');
+                });
+
+            });
+
+        </script>

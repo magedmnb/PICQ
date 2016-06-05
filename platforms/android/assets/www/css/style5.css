@@ -1,0 +1,386 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*--header--*/
+#notification{
+  top: 2.5px;
+  right: 3px;
+  height: 35px;
+  width: 10%;
+  position: absolute
+  }
+.menu{
+	background:  #f4b348;
+	height: 39px;
+        margin-top: -4px;
+}
+.menu li {
+	float:left;
+	width: 24%;
+	border-right: 1px solid #f8cf8c;
+        line-height: 15px;
+}
+
+#hh{
+    float:left;
+    width: 24%;
+    border-right: 1px solid #f4b348;
+}
+
+.menu li a{
+	color:#fff;
+	display:block;
+	padding:6px 4px;
+	font-size:17px;
+	text-align: center;
+}
+.menu li.active a, .menu li a:hover {
+	color: #fff;
+        background: #f8cf8c;
+        width: 78%;
+  
+        margin-left: 5px;
+        margin-right: 22px;
+}
+
+.logo{
+	position: relative;
+	margin-bottom: -3px;
+}
+
+
+
+.menu  ul {
+  list-style: none;
+  margin: 0;
+  padding: 7px;
+}
+
+#q_image{
+    -webkit-mask-box-image: url(../images/mask.png);
+    height: 80px;
+    width: 73px;
+    border: 0;
+    text-decoration:none;
+    float:left;
+}
+
+
+#q-image2{
+    -webkit-mask-box-image: url(../images/mask.png);
+    height: 50px;
+    width: 40px;
+    border: 0;
+    text-decoration:none;
+    float:left;
+    
+}
+
+.follower_post{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+    height: 474px;
+    top: 80px;
+    z-index: -1;
+}
+
+
+.follower_data_img_time{
+    padding:9px;
+    overflow: hidden;position: absolute;
+}
+.follower_data_img{
+    float:left;
+    width: 240px;
+}
+
+#followers-info{
+    float:right;
+    margin-top:5px;
+}
+
+.post-time{
+    float:right;
+}
+
+ span.desc {
+                color: #047C7A;
+                position: absolute;
+                font-size: 15px;
+                left: 90px;
+                top: 55px;
+            }
+            
+            span.tags{
+                color: #f8cf8c;
+                position: absolute;
+                font-size: 15px;
+                left: 90px;
+                top: 72px;
+            }  
+            
+            span.name{
+                position: absolute;
+                left: 90px;
+                top: 16px;
+                
+            }
+     
+            .post_image_btns{
+                width:100%;
+                padding:9px;
+                position: absolute;
+                top: 90px;
+            }
+            
+            #post_image{
+                float:left;
+            }
+            
+            #post_btns{
+                
+               float:right; 
+               width:7%;
+               padding-right:20px;
+               padding-top: 46px;
+            }
+            
+            .border_li{
+                border-bottom: #DBD8D8 solid 1px;
+                padding-bottom: 9px;
+            }
+            #li_like{
+                padding-top: 9px;
+            }
+            .like_comment{
+                position:absolute;
+                top: 312px;
+                left: 9px;
+                width:100%;
+            }
+            
+            .like_comment a{
+                text-decoration: none;
+                color: black;
+                font-size: small;
+                font-weight: 100;
+            }
+            .like_comment span{
+                text-decoration: none;
+                color: black;
+                font-size: small;
+                font-weight: 100;
+            }
+            
+            .header{
+                position: fixed;
+            }
+            
+            
+            
+            #hr{
+                top: 81px;
+                margin-top: 243px;
+                margin-right: 52px;
+                width: 95%;
+                margin-left: 9px;
+            }
+            
+            .comment1{
+                overflow: hidden;
+                
+                top: 237px;
+                background-color: #f3f3f3;
+                height: 53px;
+                position: relative;
+                padding: 9px;
+                margin: 9px;
+            }
+            
+            textarea.comment_textarea {
+                        width: 77%;
+                         margin-left: 5px;
+                    }
+                    
+                    #commenter_name{
+                        margin-left: 5px;
+                    }
+                    
+                    .comment_button{
+                        background-color: #f3f3f3;
+                        position: relative;
+                        top: 236px;
+                        margin-left: 9px;
+                        height: 47px;
+                        width: 34%;
+                        float: right;
+                        margin-top: -10px;
+                        margin-right:9px
+                    }
+                    
+                    #button_comment{
+                        height: 27px;
+                        background-color: #047C7A;
+                        color: #fff;
+                        float: right;
+                        margin-right: 6%;
+                        /* padding: 21px; */
+                        margin-top: 10px;
+                         width: 88%;
+                    }
+                    
+                    
+                    #headerrr{
+		background-image: url("/Users/heidyhazem/Desktop/PICQ/h.png");
+                color: white;
+                text-align: center;
+                height: 66px;
+                background-size: 125%;
+                position: fixed;
+                width:100%;
+		}
+                
+                #back{
+		float:left;
+		margin-left:10px;
+		margin-top:10px;
+		width:40px;
+		height:40px;
+	}
+        
+         #title{
+		float:left;
+		margin-left:10px;
+		margin-top:-2px;
+		width:20%;
+		}
+                
+                #post_btns2 li{
+                    display: inline;
+                }
+                
+                .commentz2{
+                            width: 100%;
+                            height: 49px;
+                            background-color: #DDD;
+                            margin-top: 36px;
+                            
+                   }
+                   
+                   a#commenter_name {
+                        color: black;
+                        }
+                        
+                   #social_btns_comments li{
+                            display:inline;
+                            overflow: hidden;
+                            
+                        }
+                        
+                   #social_btns_comments img{
+                            width:6%;
+                            
+                        }
+                     
+                        .post_image_btns2{
+                            width: 100%;
+                            padding: 9px;
+                            top: 90px;
+                            overflow: hidden;
+                        }
+                        
+                        .like_comment_buttons {
+                                    padding-left: 9px;
+                                     width: 95%;
+                            }
+                            
+                            h3 {
+                            padding-top: 27%;
+                            font-size: x-large;
+                            
+                                }
+                                
+                                .follower_post2{
+                                      width: 100%;
+                                     
+                                      overflow: hidden;
+                                      top: 80px;
+                                       z-index: -1;
+                                }
+                                
+                                .all_comments{
+                                    margin-top: 4px;
+                                    background-color: #f3f3f3;
+                                    height:50px;
+                                    padding:7px;
+                                }
+                                
+                                #comment_ul{
+                                    margin-top: 50px;
+                                    margin-left: 9px;
+                                    width: 95.1%;
+                                }
+                                
+                                #q-image3{
+                                   
+                            -webkit-mask-box-image: url(../images/mask.png);
+                            height: 40px;
+                            width: 40px;
+                            border: 0;
+                            text-decoration: none;
+                            float: left;
+                            /* padding-top: 9px; */
+                            margin-top: 6px;
+                            
+
+                                }
+                                
+                                .comment_show{
+                                    margin-left:46px;
+                                   
+                                    font-weight: 100;
+                                    font-size: smaller;
+                                    color: #625D5D;
+                                }
+                                
+                                .commenter_name{
+                                    padding-left:6px;
+                                }
+                                
+                                #comment_time{
+                                    float:right;
+                                    font-weight: 100;
+                                    font-size: smaller;
+                                    color: #625D5D;
+                                }
+                                
+                                .number_like_comment {
+                                    margin-left: 23%;
+                                    margin-top: -20px;
+                                    font-size: smaller;
+                                }

@@ -1,0 +1,87 @@
+  
+		  
+		  <style>
+                body {
+      background:url(images/back.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+       background-size: cover;
+	 
+}
+                
+                #title{
+                    margin-top: 10px;
+                }
+                #main{
+                    width:100%;
+                    height:70px;
+                }
+                #name{
+                    float:left;
+                    width:40%;
+                    margin-left:2%;
+                }
+                input{
+                      min-height: 2.7em;
+                }
+                #category{
+                    float:right;
+                    width:40%;
+                    margin-right:15%;
+                    font-family:Helvetica;
+                    height:50px;
+                }
+                #dd{
+                     margin-top: -55px;
+                     width: 111%;
+                     font-size: 14px;  
+                    font-family: sans-serif;
+                    color:black;
+                    
+                }
+                #search{
+                    margin:0 auto;
+                    width:30%;
+                    margin-top: 10px;
+                    margin-left: 36%;
+                }
+                .dropdown li
+                {
+                    background-color: #f8cf8c;
+                    color:black;
+
+                }
+                
+        </style>
+
+	 <div id="title"><p>Please enter the name or a keyword</p></div>
+                <div id="main">
+                    <div id="name"><input id="search_input" type="text" placeholder ="Write The name "/></div>
+                    <div id="category">
+                        <section class="main">
+                            <div class="wrapper-demo">
+                                <div id="dd" class="wrapper-dropdown-3">
+                                    <span>Category</span>
+                                    <ul class="dropdown" id="cat">
+                                         <li value="1"><a  href="#">All</a></li>
+                                            <li value="2"><a  href="#">Art</a></li>
+                                            <li value="3"><a  href="#">Classic</a></li>
+                                            <li value="4" ><a href="#">Modern</a></li>
+                                       
+                                    </ul>
+                                </div>
+                ​            </div>
+                        </section>                  
+                    </div>
+                </div>
+                <div id="search"><a id="btnsearch" href="#"><img  src="images/search button.png" width="100%" height="50px"/></a></div>
+				<div id="error">
+				<div id="followinglist" >
+<ul  id="result" style="list-style:none;">
+
+</ul>
+</div>
+</div>
+				
+			

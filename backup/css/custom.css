@@ -1,0 +1,304 @@
+.login_img
+{
+ border-radius: 5px; 
+                                          position: absolute;
+                                          top: 43.5%;
+                                          left: 10%;
+ }span.tags {
+                margin-top: -9%;
+                color: #f4b348;
+            }
+            span.desc {
+                color: #047C7A;
+                margin-top: 2%;
+            }
+            
+            .posts{
+                list-style: none;
+            }
+            .post-user img{
+                width: 50px;
+                height:50px;
+            } 
+            img  !important{
+                width: 90%;
+            }
+            div.a-meta > a {
+                text-decoration: none;
+                margin-left: -5%;
+                color: black;
+            }
+
+            .post-user{
+                float: left;
+            }
+
+            .post-time{
+                float:right;
+                margin-right: 4%;
+                margin-top: 1.8%
+            }
+
+            .post-user img{
+                float: left;
+
+                -webkit-mask-box-image: url(../images/mask.png);
+                -moz-mask-box-image: url(../images/mask.png);
+                mask-box-image: url(../images/mask.png);
+
+                height: 62px;
+                width: 55px;
+                border: 0;
+                text-decoration:none;
+            }
+            .likes
+            {
+                display: inline-block;
+                margin-left: -29px;
+                width: 100%;
+
+
+            }
+
+            .post-user span{
+                width: 100%;
+                display: block;
+            }
+            .social-btns 
+            {
+                margin-left: 15%;
+                height: 146px;
+
+                margin-top:-51%;
+                float: none !important;
+            }
+            .social-btns img{
+                width: 100%;
+                display: block;
+                width: 10%;
+                margin-left: 89%;
+
+                margin-top: 6%;
+
+            }
+            .user-text{
+                float: left;
+                margin-left: 5px;
+            }
+            hr.style1{
+
+                border: 0;
+
+                height: 1px;
+
+                background: #a9a9aa;
+                margin-top: 2%;
+
+            }		article {
+                padding-top: 19px;
+                margin-bottom: 1px; 
+                border-top: 2px solid #EBEBEC; 
+            }
+
+
+            .picture img{
+                border:4px solid #ebebec;
+                width: 127%;
+                margin-left: -16%;
+            }
+
+            .post-data,
+            .post-picture{
+                min-height: 70px;
+            }
+
+            .picture{
+                float: left;
+                width: 75%;
+                overflow: none;
+            }
+           
+			#main_header
+			{
+			margin-top: -.43%;
+			}
+			
+			#header
+			{
+			background: url('../images/header.png') no-repeat center center;
+                     background-size: 100% 100%;
+                     background-position:100% 100%;
+                     
+			
+			}
+			#logo_img
+			{
+			 width: 12%;
+                             opacity: 0.8;position:absolute;margin-left: 35%;margin-top: -.5%;
+			}
+			.header-google {
+                border: none;
+                border-bottom: 1px solid #000;
+                background:  #f4b348;
+                margin-bottom: -1%;
+                border-bottom: 1px solid #f4b348;
+
+            }
+
+            .header-google a.ui-btn {
+                border: none;
+                background: inherit;
+                text-shadow: none;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+            }
+
+            .header-google .ui-btn-inner {
+                padding: 0 !important;
+                height: 29px;
+                line-height: 29px;
+            }
+
+            .header-google a.ui-btn.ui-btn-active,
+            .header-google a.ui-btn:hover{
+                color: #FFF;
+            }
+			 #nav_links_background
+            {
+                background: url('../images/rectangel.png')no-repeat center center; background-size: 85% 80%;
+                border-radius:135px;
+            }
+			#index {
+    background: url(../images/splach.jpg);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+.a-meta{
+    
+    
+    
+}
+.ui-link span{
+    margin-left:8%;
+    font-size:medium;
+    font-weight: normal;
+}
+
+.ui-linkk span{
+    margin-left: 8%;
+    font-size: medium;
+    font-weight: normal;
+}
+
+#notification_number{
+    margin: 0 0 10px 0;
+  font-size: larger;
+  z-index: 2;
+  float: right;
+  margin-left: 36.4%;
+  margin-top: -1.7%;
+  position: absolute;
+}
+
+.upload_desc{
+    width:30%;
+    float:right;
+}    
+.upload_desc ul{
+    list-style: none;
+} 
+
+.upload_camera{
+    
+}
+.pic_camera{
+    position: relative;
+}
+
+.upload_desc  {
+  width: 44%;
+  float: right;
+  display: block;
+  margin-top: -1%;
+}
+.upload_camera {
+  position: absolute;
+  left: 35%;
+  bottom: 7%;
+  width: 54px;
+}
+.o-page{
+    background-image:url(../images/back.png);
+}
+.upload {
+   background-color: #047c7a;
+  color: #fff;
+  width: 28%;
+  left: 37%;
+  margin-top: 15%;
+  border-radius: initial;
+}
+
+input[type="text"] {
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.profile_posted_photos1 {
+                float: left;
+
+                -webkit-mask-box-image: url(../images/pic_shape.png);
+                
+
+                width:30%;
+                border: 0;
+                text-decoration:none;
+            }
+            
+           #cont{
+		width:100%;
+		height:100%;
+
+	}
+	#cont img{
+		margin: 2px;
+		float: left;
+		width:98px;
+		height: 98px;
+		display: inline-block;
+	}
+
+	#cont .large{
+	
+  width: 63% !important;
+  height: 200px !important;
+
+		}
+                
+         .drop_down_options {
+                    float: right;
+                     margin-top: -27%;
+                    width: 15%;
+                    }
+           .profile_user_info {
+                          width: 60%;
+                        }         
+            .profile_posted_photos {
+                padding-bottom: 10px;
+                    }        
+                    
+                    
+             span#profile_name {
+                    font-weight: bolder;
+                    font-size: large;
+                     margin-left: 2%;
+                    }
